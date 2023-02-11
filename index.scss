@@ -1,0 +1,79 @@
+@use "breakpoints";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+$gb-for-qrCode: #3685fe;
+$gb-for-body: hsl(212, 45%, 89%);
+$gb-for-card: hsl(0, 0%, 100%);
+$text-color: hsl(220, 15%, 55%);
+$bold-text-color: hsl(218, 44%, 22%);
+
+*,
+*::before,
+*::after {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  // overflow: hidden;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding-bottom: 1rem;
+  background-color: $gb-for-body;
+  transition: all 0.2s ease-in-out;
+  @include breakpoints.md {
+    margin: 3em;
+    transition: all 0.2s ease-in-out;
+    border-radius: 30px;
+  }
+
+  .container__wrapper {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include breakpoints.md {
+      height: 85vh;
+    }
+    height: 96vh;
+
+    .card {
+      padding: 15px;
+      border-radius: 17px;
+      width: 20em;
+      background-color: $gb-for-card;
+      text-align: center;
+
+      .cardImage {
+        padding: 0px;
+
+        img {
+          width: 18em;
+          border-radius: 15px;
+        }
+      }
+      .cardBody {
+        margin-block: 1.7rem;
+        padding-inline: 1em;
+        h2 {
+          font-size: 1.4em;
+          font-weight: 700;
+          color: $bold-text-color;
+        }
+        p {
+          font-size: 15px;
+          font-weight: 400;
+          padding-inline: 1.1em;
+          margin-block: 1rem;
+          color: $text-color;
+        }
+      }
+    }
+  }
+  .attribution {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

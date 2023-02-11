@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding-bottom: 1rem;
+  background-color: hsl(212deg, 45%, 89%);
+  transition: all 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    margin: 3em;
+    transition: all 0.2s ease-in-out;
+    border-radius: 30px;
+  }
+}
+.wrapper .container__wrapper {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 96vh;
+}
+@media (min-width: 768px) {
+  .wrapper .container__wrapper {
+    height: 85vh;
+  }
+}
+.wrapper .container__wrapper .card {
+  padding: 15px;
+  border-radius: 17px;
+  width: 20em;
+  background-color: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+.wrapper .container__wrapper .card .cardImage {
+  padding: 0px;
+}
+.wrapper .container__wrapper .card .cardImage img {
+  width: 18em;
+  border-radius: 15px;
+}
+.wrapper .container__wrapper .card .cardBody {
+  margin-block: 1.7rem;
+  padding-inline: 1em;
+}
+.wrapper .container__wrapper .card .cardBody h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: hsl(218deg, 44%, 22%);
+}
+.wrapper .container__wrapper .card .cardBody p {
+  font-size: 15px;
+  font-weight: 400;
+  padding-inline: 1.1em;
+  margin-block: 1rem;
+  color: hsl(220deg, 15%, 55%);
+}
+.wrapper .attribution {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */

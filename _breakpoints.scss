@@ -1,0 +1,7 @@
+$_screen_md: 768px;
+
+@mixin md {
+  @media (min-width: #{$_screen_md}) {
+    @content;
+  }
+}
